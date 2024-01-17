@@ -52,3 +52,15 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## 📝 Notes Wallace
+
+En la carpeta src esta todo el código fuente de nuestro proyecto. Esta luego será procesada por Astro.
+ - `src/assets` -> Aquí se deben de almacenar activos como imágenes
+ - `src/components` -> Aquí van los componentes reutilizables 
+ - `src/content` -> Aquí se almacenarán colecciones de contenidos
+ - `src/layouts` -> Aquí van las plantillas que definen la estructura de la UI 
+ - `src/pages` -> Aquí van las pagines que pueden tener componentes 
+ - `src/styles` -> Aquí van los css
+ - `public` -> contenido publico sin ser procesado por Astro

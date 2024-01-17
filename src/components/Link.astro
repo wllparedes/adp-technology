@@ -1,0 +1,15 @@
+---
+const { href, text, class: newClass } = Astro.props;
+
+let classDefault = 'px-3 py-2 text-sm font-medium';
+let classDesign = newClass ? newClass : classDefault; 
+
+---
+
+<a
+	href={href}
+	class={`${classDefault} ${classDesign}`}
+>
+	<slot />
+	{text}
+</a>

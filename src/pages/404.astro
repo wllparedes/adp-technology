@@ -1,0 +1,83 @@
+---
+import image404 from './../assets/images/404.png';
+import icon from './../assets/images/icon.png';
+import '@fontsource-variable/onest'
+
+---
+
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta
+			name='description'
+			content='Astro description'
+		/>
+		<meta
+			name='viewport'
+			content='width=device-width'
+		/>
+		<link
+			rel='icon'
+			type='image/png'
+			href={icon.src}
+		/>
+		<meta
+			name='generator'
+			content={Astro.generator}
+		/>
+
+		<title>404</title>
+	</head>
+	<body>
+		<section>
+			<img src={image404.src} />
+			<div class='container-info flex flex-col p-4 text-center'>
+				<h2 class='text-3xl stroke-neutral-900 font-semibold sm:text-5xl'>
+					¡Ups! página no encontrada.
+				</h2>
+				<div class='text-info text-gray-500'>
+					<p>
+						Lo sentimos, ¡la página que has buscado no existe en
+						nuestro sitio web!
+					</p>
+					<p>
+						¿Quizás ir a nuestra página de inicio o intentar
+						utilizar una búsqueda?
+					</p>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
+
+<style>
+	*{
+		font-family: 'Onest Variable', sans-serif;
+	}
+	body {
+		background-color: #fafafa;
+	}
+	section {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		gap: 5px;
+		/* font-weight: 500; */
+
+		height: 100vh;
+	}
+	img {
+		width: 100%;
+		max-width: 500px;
+	}
+	p {
+		text-wrap: balance;
+	}
+	.container-info {
+		gap: 15px;
+	}
+</style>
